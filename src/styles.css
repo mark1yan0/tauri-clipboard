@@ -1,0 +1,62 @@
+:root {
+  --text-light: #ffffff;
+  --text-dark: #0f0f0f;
+  --main-light: #f6f6f6;
+  --main-dark: #2f2f2f;
+  --button-accent: #24c8db;
+  --button-bg: #0f0f0f98;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--text-dark);
+  background-color: var(--main-light);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  color: var(--text-light);
+  background-color: var(--button-bg);
+  font-size: medium;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-accent);
+}
+button:active {
+  background-color: var(--button-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--main-light);
+    background-color: var(--main-dark);
+  }
+
+  a:hover {
+    color: var(--button-accent);
+  }
+
+  input {
+    color: var(--text-light);
+    background-color: var(--button-bg);
+  }
+}
